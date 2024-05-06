@@ -1,25 +1,26 @@
 {
-  "name": "hub-template",
+  "name": "rag-with-ollama",
   "version": "1.0.0",
-  "description": "Template to start a new repository on the hub",
-  "main": "index.js",
+  "description": "Example of RAG implementation with Ollama",
+  "main": "src/entry.js",
   "type": "module",
   "scripts": {
     "lint": "eslint .",
+    "start": "node src/entry.js",
     "test": "echo \"Error: no test specified\" && exit 0",
     "prepare": "husky"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nearform/hub-template.git"
+    "url": "git+https://github.com/nearform/rag-with-ollama.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nearform/hub-template/issues"
+    "url": "https://github.com/nearform/rag-with-ollama/issues"
   },
-  "homepage": "https://github.com/nearform/hub-template#readme",
+  "homepage": "https://github.com/nearform/rag-with-ollama#readme",
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
@@ -32,5 +33,13 @@
   },
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.0.54",
+    "langchain": "^0.1.36",
+    "officeparser": "^4.0.8"
+  },
+  "overrides": {
+    "@langchain/core": "0.1.61"
   }
 }

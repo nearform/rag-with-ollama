@@ -1,12 +1,22 @@
 ![CI](https://github.com/nearform/hub-template/actions/workflows/ci.yml/badge.svg?event=push)
 
-# Hub Template
+# RAG with Ollama
+RAG (Retrieval Augmented Generation) implementation using LangChain and Ollama.
 
-A feature-packed template to start a new repository on the hub, including:
+## Requirements
+1. Download Ollama from the official [download page](https://ollama.com/download)
+2. Install Ollama
+3. Open a terminal and type `ollama pull llama3`
 
-- code linting with [ESlint](https://eslint.org) and [prettier](https://prettier.io)
-- pre-commit code linting and commit message linting with [husky](https://www.npmjs.com/package/husky) and [commitlint](https://commitlint.js.org/)
-- dependabot setup with automatic merging thanks to ["merge dependabot" GitHub action](https://github.com/fastify/github-action-merge-dependabot)
-- notifications about commits waiting to be released thanks to ["notify release" GitHub action](https://github.com/nearform/github-action-notify-release)
-- PRs' linked issues check with ["check linked issues" GitHub action](https://github.com/nearform/github-action-check-linked-issues)
-- Continuous Integration GitHub workflow
+<br />
+
+At this point, Ollama should be ready for use. To verify that everything has been set up correctly, you can:
+1. Open the web page http://localhost:11434/, which should display `Ollama is running`
+2. Execute the command **`ollama list`** in the terminal, which should return the `llama3:latest` record
+
+## Setup & Run
+1. Ensure Ollama is up and running
+2. Run `npm ci`
+3. Run `npm run start`
+
+**Note:** As implemented, the AI-generated text in this example is non-deterministic; therefore, it is possible that the responses you receive may differ from those obtained by others. That said, if implemented well, the RAG algorithm should still consistently demonstrate the difference between a response generated without specific knowledge of the context and one with context-awareness.
