@@ -35,7 +35,7 @@
     "*.{js,jsx}": "eslint --cache --fix"
   },
   "dependencies": {
-    "@langchain/community": "^0.3.44",
+    "@langchain/community": "^0.3.45",
     "langchain": "^0.3.27",
     "officeparser": "^4.2.0"
   },
