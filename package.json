@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@langchain/community": "^1.1.28",
-    "langchain": "^1.4.0",
+    "langchain": "^1.4.2",
     "officeparser": "^7.0.3"
   },
   "overrides": {
