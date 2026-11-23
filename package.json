@@ -39,7 +39,7 @@
   "dependencies": {
     "@langchain/community": "^1.1.29",
     "langchain": "^1.6.5",
-    "officeparser": "^8.7.1"
+    "officeparser": "^8.9.0"
   },
   "overrides": {
     "@langchain/core": "0.1.61"
